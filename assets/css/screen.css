@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Postoni;
+    src: url(http://img.wpdigital.net/rw/sites/webfonts/PostoniRegular/postonititling-regular-webfont.ttf?t=20120504164900);
+    font-weight:400;
+}
+
+body{
+	font-size: 62.5%;
+
+}
+#container {
+	position: relative;
+}
+
+header {
+	margin: 0 auto;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+	background: 	#222;
+}
+header div {
+	margin: 0 auto;
+}
+header h1{
+	font-size: 0;
+	text-indent: -500px;
+	color: #000;
+	width 200px;
+	height: 25px;
+	background: #222 url(../img/wp.png) -18px 0 no-repeat;
+	padding: 10px 0;
+	width: 200px;
+	float: left;
+}
+header fieldset{
+	float: right;
+	font-family: arial, sans-serif;
+	color: #fff;
+	margin-top: 10px;
+	font-size: 1.4em;
+	display: none;
+}
+header fieldset input{
+	border: 1px solid #fff;
+}
+header fieldset label{
+	margin-right: 1em;
+}
+h2{
+	color: #2E6D9D;
+    font-family: Postoni;
+    font-size: 6.7em;
+    line-height: 80px;
+
+	
+}
+hgroup{
+	margin: 67px auto 34px;
+	position: relative;
+	display: none;
+}
+hgroup img{
+	position: absolute;
+	right: 5px;
+	top:0;
+}
+h2 em{
+    color: #444;
+}
+.clip {
+    background-color: #eee;
+    border: #aaa solid 1px;
+    font-size: 1.1em;
+    position: static;
+    width: 192px;
+    color: #222;
+    line-height: 1.4em;
+	
+  }
+.clip h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.clip h3 a {
+	color: #222;
+	text-decoration: none;
+}
+.clip img{
+	margin-left: -57px;
+}
+.clip.left img,
+.clip.selected img{
+	margin-left: 0px;
+}
+.clip.right img{
+	margin-left: -114px;
+}
+.clip p {
+	padding-bottom: 5px;
+}
+.clip.selected p{
+	padding-bottom: 12px;
+}
+
+.clip > * {
+	width: 182px;
+	margin: 5px 0 0 5px;
+
+}
+.clip.sponsored > * {
+	width: 100% !important;
+	margin: 5px 10px 0 5px;
+
+}
+.clip a {
+	display: block;
+    overflow: hidden;
+}
+.clip a span.wrapper{
+	position: relative;
+	display: block;
+}
+.clip a span.btn-play{
+    background: url("../img/play-icon.png") no-repeat scroll 50% 50% transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+div.msg{
+	position:fixed;
+	bottom:0;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #222;
+	border-radius: 4px 4px 0 0;
+	border-bottom: none;
+	background: #fff no-repeat 50% 50%;
+	box-shadow: 0 4px 4px 4px rgba(34, 25, 25, 0.4);
+	display: none;
+	z-index: 99;
+}
+div.msg.to-top{
+	right: 20%;
+	background-image: url(../img/chevron-up.png); 
+}
+div.msg.loading{
+	left: 20%;
+	background-image: url(../img/ajax-loader.gif);
+}
+
+section{
+	position: relative;
+	margin: 0 auto;
+	font-family: arial, sans-serif;
+}
+
+section.single-column{
+	width: 100% !important;
+	
+}
+
+section.single-column div.clip{
+	width: auto !important;
+	border-left:none;
+	border-right: none;
+}
+
+section.single-column div.clip > div {
+	width: auto !important;
+	margin-right: 5px;
+}
+
+section.single-column div.clip a{
+	width: 100%;
+	text-align: center;
+}
+
+section.single-column div.clip img{
+	margin-left: 0;
+}
+
+section.single-column div.clip h3 a{
+	text-align:left;
+}
+
+
+.WPpre {
+  background-image: url("http://img.wpdigital.net/rw/sites/twpweb/img/logos/wp-90x75.png?t=20120504164900");
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 80px;
+    margin-right: 5px;
+    width: 95px;
+}
+div.clip.selected {
+    width: 307px;
+    font-size: 1.35em;
+    z-index: 8;
+    border: #2E6D9D 1px solid;
+    margin-left: -64px;
+    box-shadow: 0 4px 4px 4px rgba(34, 25, 25, 0.4);
+}
+
+div.clip:hover{
+	border-color: #2E6D9D;
+}
+div.clip:hover span.btn-play{
+	display:none;
+}
+div.clip.selected:hover span.btn-play{
+	display:block;
+}
+div.clip.selected span:hover span.btn-play{
+	display:none;
+}
+div.clip.selected.right {
+	margin-left: -114px;
+}
+
+div.clip.selected.left{
+	margin-left: 0;
+}
+
+div.clip.selected a {
+	top: 116px;
+    z-index: 9;
+}
+div.clip.selected > *{
+	width:295px;
+}
