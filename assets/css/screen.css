@@ -112,24 +112,24 @@ section h3 {
 	font-size: 2.2em;
 	margin-bottom: 30px;
 }
+table{
+	width: 100%;
+}
 th{
 	height: 25px;
 }
 td{
 	border-top: 1px solid #AAA;
 	border-bottom: 1px solid #AAA;
+	vertical-align: center;
+	padding: 20px 0;
 }
 
 tbody{
-	border-top: 2px solid #AAA;	
+	border-top: 2px solid #666;	
 }
 
-tr {
-	padding: 20px 0;
-}
-td{
-	vertical-align: center;
-}
+
 
 .WPpre {
   	background-image: url("http://img.wpdigital.net/rw/sites/twpweb/img/logos/wp-90x75.png?t=20120504164900");
@@ -140,4 +140,64 @@ td{
     height: 80px;
     margin-right: 5px;
     width: 95px;
+}
+
+#pagination {
+    background: none repeat scroll 0 0 #F5F5F5;
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: 20px 0;
+}
+#pagination div {
+    line-height: 18px;
+    margin-left: 130px;
+    white-space: normal;
+    width: inherit;
+}
+#pagination span {
+    border-left: 1px solid #AAAAAA;
+    display: block;
+    float: left;
+    line-height: 16px;
+    padding-left: 2px;
+    padding-right: 3px;
+    text-align: center;
+    width: 28px;
+}
+#pagination span.first {
+    border-left: medium none;
+    padding-left: 0;
+}
+#pagination span.last {
+    padding-right: 0;
+}
+#pagination span.no-border {
+    border-left: medium none;
+}
+#pagination span.space {
+    border-left: medium none;
+    padding: 0;
+    width: auto;
+}
+#pagination span a {
+    display: block;
+}
+#pagination a.next, #pagination a.prev {
+    background: url("../img/btn-next.png") no-repeat scroll 100% 50% transparent;
+    display: block;
+    float: left;
+    font-weight: 900;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 30px;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+#pagination a.prev {
+    background: url("../img/btn-prev.png") no-repeat scroll 0 50% transparent;
+    left: 20px;
+    padding-left: 30px;
+    padding-right: 0;
+    right: auto;
 }
