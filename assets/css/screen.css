@@ -138,6 +138,7 @@ table {
 th {
 	height: 45px;
 	padding-top: 20px;
+	font-weight:bold;
 }
 
 td{
@@ -145,6 +146,16 @@ td{
 	border-bottom: 1px solid #AAA;
 	vertical-align: center;
 	padding: 20px 0;
+	font-size: 1.1em;
+}
+
+td:first-child{
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+td.actions {
+	width: 69px;
 }
 
 tbody{
@@ -248,7 +259,7 @@ form{
 	float:left;
 }
 
-input, textarea{
+input, textarea, select{
 	width: 480px;
 	float:left;
 	border: 1px solid #aaa;
@@ -259,7 +270,7 @@ input, textarea{
 }
 
 input{
-	height: 20px;
+	height: 23.4px;
 }
 
 input.submit{
@@ -294,6 +305,7 @@ label {
 	line-height: 2em;
 	text-align: right;
 	margin-right: 15px;
+	font-weight: bold;
 }
 
 fieldset {
@@ -313,6 +325,17 @@ form a {
 	display:block;
 }
 
+a.edit{
+	width: 16px;
+	height: 16px;
+	font-size:0;
+	text-indent: -4000px;
+	background: url("../img/edit.jpg") repeat scroll 0 0 transparent;
+	float:left;
+	margin-top:-8px;
+	margin-right:5px;
+}
+
 section div.rail{
 	float: right;
 	width: 360px;
@@ -324,13 +347,19 @@ section div.rail h4{
 	margin-bottom: 30px;
 }
 
+section div.rail a.button{
+	float:left;
+	margin-top:17px;
+}
+
 section div.rail th {
 	padding-top: 0;
 	height: 30px;
 }
+
 section div.rail p.msg {
 	float: right;
 	font-size: 1.2em;
 	color: #777;
-	margin-top:15px;
+	margin-top:30px;
 }
