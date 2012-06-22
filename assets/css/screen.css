@@ -268,6 +268,10 @@ input, textarea, select{
 		line-height: 1.4em;
 
 }
+textarea{
+	height:48px;
+	width: 479px;
+}
 
 input{
 	height: 23.4px;
@@ -332,7 +336,7 @@ a.edit{
 	text-indent: -4000px;
 	background: url("../img/edit.jpg") repeat scroll 0 0 transparent;
 	float:left;
-	margin-top:-8px;
+
 	margin-right:5px;
 }
 
@@ -348,17 +352,18 @@ section div.rail h4{
 }
 
 section div.rail a.button{
-	float:left;
+	float:right;
 	margin-top:17px;
 }
 
 section div.rail th {
 	padding-top: 0;
-	height: 30px;
+	height: auto;
+	padding: 16px 0;
 }
 
 section div.rail p.msg {
-	float: right;
+	float: left;
 	font-size: 1.2em;
 	color: #777;
 	margin-top:30px;
